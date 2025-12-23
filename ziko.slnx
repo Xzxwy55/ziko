@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/SQL/">
+    <File Path="insert tb.sql" />
+    <File Path="key.sql" />
+    <File Path="tables.sql" />
+  </Folder>
+  <Project Path="DAL/DAL.csproj" />
+  <Project Path="Domain/Domain.csproj" />
+  <Project Path="ziko/ziko.csproj" />
+</Solution>
