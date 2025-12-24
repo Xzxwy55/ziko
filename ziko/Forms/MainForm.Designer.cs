@@ -39,11 +39,11 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = SystemColors.ActiveCaption;
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuFile, menuManagement });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(7, 2, 0, 2);
-            menuStrip1.Size = new Size(1167, 24);
+            menuStrip1.Size = new Size(1000, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -57,7 +57,7 @@
             // menuExit
             // 
             menuExit.Name = "menuExit";
-            menuExit.Size = new Size(109, 22);
+            menuExit.Size = new Size(180, 22);
             menuExit.Text = "Выход";
             menuExit.Click += menuExit_Click;
             // 
@@ -65,20 +65,20 @@
             // 
             menuManagement.DropDownItems.AddRange(new ToolStripItem[] { menuDepartments, menuEmployees });
             menuManagement.Name = "menuManagement";
-            menuManagement.Size = new Size(85, 20);
+            menuManagement.Size = new Size(81, 20);
             menuManagement.Text = "Управление";
             // 
             // menuDepartments
             // 
             menuDepartments.Name = "menuDepartments";
-            menuDepartments.Size = new Size(140, 22);
+            menuDepartments.Size = new Size(133, 22);
             menuDepartments.Text = "Отделы";
             menuDepartments.Click += menuDepartments_Click;
             // 
             // menuEmployees
             // 
             menuEmployees.Name = "menuEmployees";
-            menuEmployees.Size = new Size(140, 22);
+            menuEmployees.Size = new Size(133, 22);
             menuEmployees.Text = "Сотрудники";
             menuEmployees.Click += menuEmployees_Click;
             // 
@@ -86,38 +86,35 @@
             // 
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(0, 24);
-            panelMain.Margin = new Padding(4, 3, 4, 3);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1167, 695);
+            panelMain.Size = new Size(1000, 596);
             panelMain.TabIndex = 1;
             // 
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { statusLabel });
-            statusStrip1.Location = new Point(0, 719);
+            statusStrip1.Location = new Point(0, 620);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new Padding(1, 0, 16, 0);
-            statusStrip1.Size = new Size(1167, 22);
+            statusStrip1.Size = new Size(1000, 22);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
             // 
             // statusLabel
             // 
             statusLabel.Name = "statusLabel";
-            statusLabel.Size = new Size(169, 17);
+            statusLabel.Size = new Size(155, 17);
             statusLabel.Text = "Система учета оборудования";
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1167, 741);
+            ClientSize = new Size(1000, 642);
             Controls.Add(panelMain);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(4, 3, 4, 3);
-            MinimumSize = new Size(931, 686);
+            MinimumSize = new Size(800, 600);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Система учета оборудования";

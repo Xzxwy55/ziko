@@ -58,7 +58,6 @@ namespace DAL.Services
             }
             catch (Exception ex)
             {
-                // Логирование в консоль (в реальном проекте используйте ILogger)
                 Console.WriteLine($"Ошибка при загрузке отделов: {ex.Message}");
                 throw;
             }
@@ -152,26 +151,19 @@ namespace DAL.Services
         {
             try
             {
-                // Проверяем наличие подотделов
                 if (HasSubDepartments(id))
                 {
-                    // Не удаляем - эту ошибку обработаем в UI
+                    
                     return false;
                 }
-
-                // Проверяем наличие сотрудников
                 if (HasEmployees(id))
                 {
-                    // Не удаляем - эту ошибку обработаем в UI
                     return false;
                 }
-
                 using (var connection = new SqlConnection(_connectionString))
                 {
                     connection.Open();
-
                     string query = "DELETE FROM Departments WHERE Id = @Id";
-
                     using (var command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Id", id);
@@ -186,7 +178,6 @@ namespace DAL.Services
                 throw;
             }
         }
-
         private bool HasSubDepartments(int departmentId)
         {
             try
@@ -210,7 +201,6 @@ namespace DAL.Services
                 return false;
             }
         }
-
         private bool HasEmployees(int departmentId)
         {
             try

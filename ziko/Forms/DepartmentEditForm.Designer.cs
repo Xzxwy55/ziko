@@ -26,118 +26,132 @@
 
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtCode = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.cmbParentDepartment = new System.Windows.Forms.ComboBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            txtName = new TextBox();
+            txtCode = new TextBox();
+            txtDescription = new TextBox();
+            cmbParentDepartment = new ComboBox();
+            btnSave = new Button();
+            btnCancel = new Button();
+            SuspendLayout();
+            // 
             // label1
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Название:";
-
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 15);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 13);
+            label1.TabIndex = 0;
+            label1.Text = "Название:";
+            // 
             // label2
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Код:";
-
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 45);
+            label2.Name = "label2";
+            label2.Size = new Size(29, 13);
+            label2.TabIndex = 1;
+            label2.Text = "Код:";
+            // 
             // label3
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Описание:";
-
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 105);
+            label3.Name = "label3";
+            label3.Size = new Size(60, 13);
+            label3.TabIndex = 2;
+            label3.Text = "Описание:";
+            // 
             // label4
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Родительский отдел:";
-
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(12, 75);
+            label4.Name = "label4";
+            label4.Size = new Size(114, 13);
+            label4.TabIndex = 3;
+            label4.Text = "Родительский отдел:";
+            // 
             // txtName
-            this.txtName.Location = new System.Drawing.Point(130, 12);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(250, 20);
-            this.txtName.TabIndex = 4;
-
+            // 
+            txtName.Location = new Point(130, 12);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(165, 22);
+            txtName.TabIndex = 4;
+            // 
             // txtCode
-            this.txtCode.Location = new System.Drawing.Point(130, 42);
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(100, 20);
-            this.txtCode.TabIndex = 5;
-
+            // 
+            txtCode.Location = new Point(130, 42);
+            txtCode.Name = "txtCode";
+            txtCode.Size = new Size(165, 22);
+            txtCode.TabIndex = 5;
+            // 
             // txtDescription
-            this.txtDescription.Location = new System.Drawing.Point(130, 102);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(250, 100);
-            this.txtDescription.TabIndex = 6;
-
+            // 
+            txtDescription.Location = new Point(130, 102);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(165, 100);
+            txtDescription.TabIndex = 6;
+            // 
             // cmbParentDepartment
-            this.cmbParentDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbParentDepartment.FormattingEnabled = true;
-            this.cmbParentDepartment.Location = new System.Drawing.Point(130, 72);
-            this.cmbParentDepartment.Name = "cmbParentDepartment";
-            this.cmbParentDepartment.Size = new System.Drawing.Size(250, 21);
-            this.cmbParentDepartment.TabIndex = 7;
-
+            // 
+            cmbParentDepartment.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbParentDepartment.FormattingEnabled = true;
+            cmbParentDepartment.Location = new Point(130, 72);
+            cmbParentDepartment.Name = "cmbParentDepartment";
+            cmbParentDepartment.Size = new Size(165, 21);
+            cmbParentDepartment.TabIndex = 7;
+            // 
             // btnSave
-            this.btnSave.Location = new System.Drawing.Point(220, 220);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 30);
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Text = "Сохранить";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-
+            // 
+            btnSave.BackColor = SystemColors.MenuHighlight;
+            btnSave.Location = new Point(22, 172);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(75, 30);
+            btnSave.TabIndex = 8;
+            btnSave.Text = "Сохранить";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
+            // 
             // btnCancel
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(305, 220);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 30);
-            this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Отмена";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-
+            // 
+            btnCancel.BackColor = SystemColors.MenuHighlight;
+            btnCancel.DialogResult = DialogResult.Cancel;
+            btnCancel.Location = new Point(22, 208);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(75, 30);
+            btnCancel.TabIndex = 9;
+            btnCancel.Text = "Отмена";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
+            // 
             // DepartmentEditForm
-            this.AcceptButton = this.btnSave;
-            this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(400, 260);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.cmbParentDepartment);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.txtCode);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "DepartmentEditForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Редактирование отдела";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AcceptButton = btnSave;
+            BackColor = SystemColors.ActiveCaption;
+            CancelButton = btnCancel;
+            ClientSize = new Size(323, 250);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(cmbParentDepartment);
+            Controls.Add(txtDescription);
+            Controls.Add(txtCode);
+            Controls.Add(txtName);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "DepartmentEditForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Редактирование отдела";
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

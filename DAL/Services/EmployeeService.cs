@@ -9,7 +9,6 @@ namespace DAL.Services
     public class EmployeeService : IEmployeeService
     {
         private readonly string _connectionString;
-
         public EmployeeService()
         {
             _connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DB;Integrated Security=True";
@@ -65,7 +64,6 @@ namespace DAL.Services
 
             return employees;
         }
-
         public Employee GetEmployeeById(int id)
         {
             try
@@ -116,7 +114,6 @@ namespace DAL.Services
 
             return null;
         }
-
         public bool AddEmployee(Employee employee)
         {
             try
@@ -158,7 +155,6 @@ namespace DAL.Services
                 throw;
             }
         }
-
         public bool UpdateEmployee(Employee employee)
         {
             try
@@ -205,17 +201,14 @@ namespace DAL.Services
                 throw;
             }
         }
-
         public bool DeleteEmployee(int id)
         {
             try
             {
-                // Проверяем, не связан ли сотрудник с оборудованием
                 if (HasAssignedEquipment(id))
                 {
-                    return false; // Есть привязанное оборудование
+                    return false; 
                 }
-
                 using (var connection = new SqlConnection(_connectionString))
                 {
                     connection.Open();
@@ -236,7 +229,6 @@ namespace DAL.Services
                 throw;
             }
         }
-
         private bool HasAssignedEquipment(int employeeId)
         {
             try
